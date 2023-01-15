@@ -10,3 +10,6 @@ My .config/nvim setup
 6. Run the quickstart for treesitter : https://github.com/nvim-treesitter/nvim-treesitter#supported-languages 
   a. Will need to install the language via ':TSInstallInfo <supported lang>'
 7. Windows Clipboard stuff : https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl
+
+
+Heavily borrowed from https://github.com/ThePrimeagen/init.lua
