@@ -7,8 +7,18 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colorscheme
-  use 'joshdick/onedark.vim'
   use "EdenEast/nightfox.nvim"
+  -- Treesitter
+  use {
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate'
+  }
+  -- Telescope Stuff
+  use "nvim-lua/plenary.nvim"
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- LSP
   use {
@@ -33,18 +43,3 @@ require('packer').startup(function(use)
     },
   }
 end)
--- LSP Setup
-local lsp = require('lsp-zero')
-lsp.preset('recommended')
--- Fix Undefined global 'vim'
-lsp.configure('sumneko_lua', {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
-})
-
-lsp.setup()

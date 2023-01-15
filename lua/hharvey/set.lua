@@ -1,3 +1,12 @@
+vim.filetype.add({
+  filename = {
+    ['Jenkinsfile'] = 'groovy',
+    ['jenkinsfile'] = 'groovy',
+    ['deploy.jenkinsfile'] = 'groovy',
+  }
+})
+
+
 vim.cmd("colorscheme nordfox")
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -9,5 +18,5 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
 
+vim.o.clipboard = 'unnamedplus'
