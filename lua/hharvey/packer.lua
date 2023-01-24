@@ -13,6 +13,11 @@ require('packer').startup(function(use)
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate'
   }
+  -- Auto-Pairs
+  use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }  
   -- Telescope Stuff
   use "nvim-lua/plenary.nvim"
   use {
