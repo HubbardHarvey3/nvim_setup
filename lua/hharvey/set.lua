@@ -20,3 +20,5 @@ vim.opt.smartindent = true
 
 
 vim.o.clipboard = 'unnamedplus'
+
+vim.opt.splitright = true
