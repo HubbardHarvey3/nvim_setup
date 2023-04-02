@@ -22,3 +22,6 @@ vim.opt.smartindent = true
 vim.o.clipboard = 'unnamedplus'
 
 vim.opt.splitright = true
+
+vim.g.netrw_browse_split = 3
+vim.g.netrw_liststyle = 3
