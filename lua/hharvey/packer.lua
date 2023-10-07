@@ -7,7 +7,7 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colorscheme
-  use "EdenEast/nightfox.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
   -- Treesitter
   use {
       'nvim-treesitter/nvim-treesitter',
@@ -17,7 +17,7 @@ require('packer').startup(function(use)
   use {
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
-  }  
+  }
   -- Telescope Stuff
   use "nvim-lua/plenary.nvim"
   use {

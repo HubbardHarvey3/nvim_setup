@@ -9,6 +9,7 @@ vim.filetype.add({
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.cmd.colorscheme "catppuccin-mocha"
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
