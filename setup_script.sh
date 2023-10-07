@@ -18,6 +18,6 @@ case $doit in
     echo -e dont know ;;
 esac
 
-
-cp init.lua ~/.config/nvim/
-cp -r lua/ ~/.config/nvim/
+echo "Moving things!"
+cp -v init.lua ~/.config/nvim/
+cp -vr lua/ ~/.config/nvim/
