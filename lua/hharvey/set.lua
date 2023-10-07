@@ -7,7 +7,6 @@ vim.filetype.add({
 })
 
 
-vim.cmd("colorscheme nordfox")
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
