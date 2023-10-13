@@ -8,6 +8,8 @@ require('packer').startup(function(use)
 
   -- Colorscheme
   use { "catppuccin/nvim", as = "catppuccin" }
+  -- Status Line
+  use 'freddiehaddad/feline.nvim'
   -- Treesitter
   use {
       'nvim-treesitter/nvim-treesitter',
