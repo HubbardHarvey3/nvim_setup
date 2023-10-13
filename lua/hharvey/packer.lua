@@ -10,6 +10,7 @@ require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   -- Status Line
   use 'freddiehaddad/feline.nvim'
+  use 'lewis6991/gitsigns.nvim'
   -- Treesitter
   use {
       'nvim-treesitter/nvim-treesitter',
@@ -50,3 +51,5 @@ require('packer').startup(function(use)
     },
   }
 end)
+
+require('gitsigns').setup()
