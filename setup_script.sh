@@ -21,4 +21,5 @@ esac
 echo "Moving things!"
 cp -v init.lua ~/.config/nvim/
 cp -vr lua/ ~/.config/nvim/
+cp -vr after/ ~/.config/nvim/
 cp -iv pycodestyle ~/.config/
