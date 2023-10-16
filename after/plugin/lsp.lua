@@ -10,7 +10,7 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensured_installed = {'pylsp', 'gopls', 'lua_ls', 'terraformls', 'bashls'},
+  ensured_installed = {'pylsp', 'gopls', 'lua_ls', 'terraformls', 'bashls', 'groovyls'},
   handlers = {
     lsp_zero.default_setup,
   },
@@ -57,6 +57,14 @@ require('lspconfig').terraformls.setup({
 require('lspconfig').bashls.setup({
   on_attach = function(client, bufnr)
     print("What up scripters")
+    lsp_zero.default_keymaps({
+      buffer = bufnr
+    })
+  end,
+})
+require('lspconfig').groovyls.setup({
+  on_attach = function(client, bufnr)
+    print("What up pipe layers")
     lsp_zero.default_keymaps({
       buffer = bufnr
     })
