@@ -19,6 +19,7 @@ case $doit in
 esac
 
 echo "Moving things!"
+cp -v .tmux.conf ~/
 cp -v init.lua ~/.config/nvim/
 cp -vr lua/ ~/.config/nvim/
 cp -vr after/ ~/.config/nvim/
