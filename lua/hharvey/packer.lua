@@ -11,6 +11,9 @@ require('packer').startup(function(use)
   -- Status Line
   use 'freddiehaddad/feline.nvim'
   use 'lewis6991/gitsigns.nvim'
+  -- Tmux navigation
+  use 'christoomey/vim-tmux-navigator'
+
   -- Treesitter
   use {
       'nvim-treesitter/nvim-treesitter',
