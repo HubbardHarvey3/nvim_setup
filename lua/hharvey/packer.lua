@@ -30,6 +30,12 @@ require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- Harpoon
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
   -- Git
   use "tpope/vim-fugitive"
   -- LSP
