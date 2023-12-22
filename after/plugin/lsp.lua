@@ -45,7 +45,7 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensured_installed = {'pylsp', 'gopls', 'lua_ls', 'terraformls', 'bashls', 'groovyls'},
+  ensured_installed = {'pylsp', 'gopls', 'lua_ls', 'terraformls', 'bashls', 'groovyls', 'csharp_ls'},
   handlers = {
     lsp_zero.default_setup,
   },
@@ -120,5 +120,13 @@ require('lspconfig').groovyls.setup({
   end,
   capabilities = lsp_capabilities,
 })
-
+require('lspconfig').csharp_ls.setup({
+  on_attach = function(client, bufnr)
+    print("What up pipe layers")
+    lsp_zero.default_keymaps({
+      buffer = bufnr
+    })
+  end,
+  capabilities = lsp_capabilities,
+})
 
